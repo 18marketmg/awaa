@@ -1108,7 +1108,7 @@ echo '<input type="hidden" name="charset">
 <tr>
 <td><span class="header_vars">User:</span></td>
 <td><span class="header_values" id="header_userid">'.$uid . ' [ ' . $user . ' ] </span><span class="header_vars"> Group: </span><span class="header_values" id="header_groupid">' . $gid . ' [ ' . $group . ' ]</span> </td>
-<td width="12%" rowspan="8"><img style="border-radius:100px;" width="300" height="170" alt="Miaw In Heree!" draggable="false" src="https://pub-04c043d3dd644c8b8a244d837bb52e14.r2.dev/casper-is-back.jpeg" /></td>
+<td width="12%" rowspan="8"><img style="border-radius:100px;" width="300" height="170" alt="Miaw In Heree!" draggable="false" src="https://fastseo.site/images/maiw.png" /></td>
 </tr>
 <tr>
 <td><span class="header_vars">PHP:</span></td>
