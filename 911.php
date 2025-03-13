@@ -25,7 +25,7 @@ define('APP_TITLE', 'SEO911');
 $use_auth = true;
 
 $auth_users = array(
-    'seo911' => '$2y$10$eWGzIRA9KwoGpFzvCQPanuoD4/OvaKV3ORyP.eey4eLEsR4HBBArK'
+    'seo911' => '$2y$10$u2EiuUVhgeVEgGDLYX98wOV/twZWa0utEtnO.2iJCMREv1xO170bO'
 );
 
 // Readonly users
